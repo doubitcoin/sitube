@@ -53,3 +53,11 @@ In VS' Solution Explorer select upnpc-static' Properies -> C/C++ -> Code Generat
 And Finaly do the Build.
 
 Good luck!
+
+
+[Pool.goro.info](http://pool.goro.info)
+
+[explorer.goro.info](http://explorer.goro.info)-This is the block explorer
+
+[WEB WALLET](http://goro.info/wallet)
+
