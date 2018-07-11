@@ -59,5 +59,5 @@ Good luck!
 
 [explorer.goro.info](http://explorer.goro.info)-This is the block explorer
 
-[WEB WALLET](http://goro.info/wallet)
+[WEB WALLET](https://goro.info/wallet)
 
