@@ -46,7 +46,7 @@ const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V1  = 100000;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_CURRENT = CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE;
 const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
 const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 8;
-const uint64_t MINIMUM_FEE                                   = 100000; // for now Minimum fee would be 0.001 PARS for a while 
+const uint64_t MINIMUM_FEE                                   = 100000; // for now Minimum fee would be 0.001 GORO for a while 
 const uint64_t DEFAULT_DUST_THRESHOLD                        = 100000000;
 const uint64_t MAX_TX_MIXIN_SIZE                             = 20;
 
