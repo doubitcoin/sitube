@@ -26,14 +26,14 @@ const uint64_t DIFFICULTY_TARGET                             = 120; // seconds
 const uint64_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
 const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;
-const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0x8e65d3f6d; // addresses must show "goroCoin"
+const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0x292419; // addresses must show "Situ"
 const size_t   CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 20;
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = 500;
 
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 11;
 
 // MONEY_SUPPLY - total number coins to be generated
-const uint64_t MONEY_SUPPLY                                  = UINT64_C(18446744073709551615);
+const uint64_t MONEY_SUPPLY                                  = UINT64_C(10000000000000000);
 const uint64_t TAIL_EMISSION_REWARD                          = UINT64_C(10000000000);
 const size_t CRYPTONOTE_COIN_VERSION                         = 1;
 const unsigned EMISSION_SPEED_FACTOR                         = 19;
@@ -90,8 +90,8 @@ const char     CRYPTONOTE_BLOCKCHAIN_INDICES_FILENAME[]      = "blockchainindice
 const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json";
 } // parameters
 
-const char     CRYPTONOTE_NAME[]                             = "goro";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "011401ff0001ffffffffffff07029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210116f116088e028922307bc66e167e223c7e936d98de2ce7dd360db7992ec31a74";
+const char     CRYPTONOTE_NAME[]                             = "sitube";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
@@ -104,8 +104,8 @@ const size_t   BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT        =  10000;  //by def
 const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  200;    //by default, blocks count in blocks downloading
 const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT         =  1000;
 
-const int      P2P_DEFAULT_PORT                              =  28288;
-const int      RPC_DEFAULT_PORT                              =  28289;
+const int      P2P_DEFAULT_PORT                              =  19044;
+const int      RPC_DEFAULT_PORT                              =  19045;
 
 const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT                =  1000;
 const size_t   P2P_LOCAL_GRAY_PEERLIST_LIMIT                 =  5000;
@@ -125,12 +125,10 @@ const uint32_t P2P_IP_BLOCKTIME                              = (60 * 60 * 24);//
 const uint32_t P2P_IP_FAILS_BEFORE_BLOCK                     = 10;
 const uint32_t P2P_IDLE_CONNECTION_KILL_INTERVAL             = (5 * 60);      //5 minutes
 
-const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "048a6609450d2bc81aa45a1c305971d129621d3e989d9e98f10cc72fc9844f9bf99fe335443af4e643472da489cc846e8ed0076839003ed93bc999d5e6f66d1b3b";
+const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "";
 
 const char* const SEED_NODES[] = { 
-  "94.177.217.240:28288",
-  "80.211.28.140:28288",
-  "80.211.180.4:28288",
+  "178.128.205.178:19044",
 };
 
 struct CheckpointData {
@@ -139,16 +137,7 @@ struct CheckpointData {
 };
 
 const std::initializer_list<CheckpointData> CHECKPOINTS = { 
-     {0,	   "938f83f04b2e0e3b5d6acf75a7197c8b418f6c987c607786b939b1306d9105d1" },
-     {10,	   "5abcfefc29ace63d29b3ac94925554d62a1d29090be084f55e0e7063cf06ac69" },
-     {100,   "6f3ae824c3a9e0f199f22be2a7569182eef2ee2b8a9ab2bc06b4f110197e5415" },
-     {1000,  "893f79e96fd97da6b40b9241b7d184b756514970991b97fa587c349ddd161888" },
-     {5000,  "e1495bab59f5072f1f49a0cc8ab06f56cb133b9c3b01676080b9f2d17a81d721" },
-     {10000, "a25aeaa9b47bed800c4c5fe463afb22ec0d65ff01f9149b958fcde1e49052ee9" },
-     {14501, "fdbc09d396340bd6ee9c9668b9ca5fb6576c104384c93c7ff00af5b03ffdcc56"}, //v2 ch 
-     {14701, "118c73dcbf638d25758d31ffa0e7e5aff2553bb321ffaf70f1164e8acd716df0"} //v3 ch
-
-
+    // {0,	   "938f83f04b2e0e3b5d6acf75a7197c8b418f6c987c607786b939b1306d9105d1" }
 };
 
 } // CryptoNote
