@@ -128,7 +128,7 @@ const uint32_t P2P_IDLE_CONNECTION_KILL_INTERVAL             = (5 * 60);      //
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "";
 
 const char* const SEED_NODES[] = { 
-  "178.128.220.67:19044",
+  "tube.asiapool.io:19044",
 };
 
 struct CheckpointData {
